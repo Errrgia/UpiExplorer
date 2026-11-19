@@ -3,6 +3,9 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
     <title>UpiExplorer - Mobile Version</title>
     <link rel="stylesheet" href="style.css">
@@ -48,9 +51,7 @@
             <div class="tby" style="font-size:clamp(10px,1.6vw,12px);opacity:.7;margin-top:-6px;margin-bottom:10px;letter-spacing:1px">
                 by Kelompok 9 · Mata Kuliah Bahasa Indonesia
             </div>
-            
-            <button id="play">▶ Mulai Cerita</button>
-            
+            <button id="play">▶ Mulai Game</button>
         </div>
     </div>
 
@@ -67,9 +68,6 @@
     <div id="ctl" class="off">
         <button id="bmenu" title="Menu / Jeda (Esc)">☰</button>
         <button id="bfull" title="Fullscreen (Layar Penuh)">⛶</button>
-        <button id="brl" title="Putar peta ke kiri (Q)">⟲</button>
-        <button id="bnorth" title="Reset arah peta">🧭</button>
-        <button id="brr" title="Putar peta ke kanan (R)">⟳</button>
     </div>
 
     <!-- Pause Menu -->
@@ -78,13 +76,8 @@
             <h2>⏸ Jeda</h2>
             <button class="main" id="pres">▶ Lanjutkan</button>
             <button id="pfull">⛶ Layar Penuh (Fullscreen)</button>
-            <div class="prow">
-                <button id="prl">⟲ Putar Kiri</button>
-                <button id="prr">Putar Kanan ⟳</button>
-            </div>
-            <button id="pnorth">🧭 Reset Arah Peta</button>
             <button class="danger" id="pexit">⏏ Keluar ke Judul</button>
-            <p class="phint">Esc / P: menu · Q / R: putar peta</p>
+            <p class="phint">Esc / P: menu · F: layar penuh</p>
         </div>
     </div>
 
@@ -99,7 +92,6 @@
 
     <!-- Embedded Original Game Logic & Scripts -->
     <script src="main.js"></script>
-    <!-- Paste or load the full original game code here -->
 </body>
 </html>
 
